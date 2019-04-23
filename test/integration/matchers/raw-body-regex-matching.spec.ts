@@ -9,7 +9,7 @@ describe.only("Regular expression raw body matching", function () {
 
     beforeEach(async () => {
         await server.post("/")
-              .withMatchedBody(/"username": "test"/gi)
+              .withRegexBody(/"username": "test"/gi)
               .thenReply(200, 'matched');
     });
 

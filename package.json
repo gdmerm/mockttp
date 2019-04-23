@@ -28,7 +28,8 @@
     "standalone": "npm run build && node -e 'require(\".\").getStandalone({ debug: true }).start()'",
     "ci": "npm run test && catch-uncommitted",
     "graphiql": "npm run build && node ./standalone-graphiql.js",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
